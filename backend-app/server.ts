@@ -14,16 +14,6 @@ process.on('uncaughtException', (err) => {
 
 import app from './app';
 
-// let cnt = 0;
-// setInterval(() => {
-//     TaskEmitter.emitNotification({
-//         category: 'alert',
-//         sender: '6532ae0cf63bfdb633eb5f2b',
-//         receiver: '668e42b6b8833839371fd0d1' as unknown as any,
-//         content: `My name is Muhammad Muttaqin ${cnt++}`,
-//     });
-// }, 1000 * 40);
-
 mongoose.set('strictQuery', true);
 
 let expServer: Promise<import('http').Server>;
